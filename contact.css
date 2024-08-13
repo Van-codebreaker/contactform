@@ -1,0 +1,368 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(227, 253, 245); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* background: linear-gradient(to right, rgb(121, 211, 199), rgb(105, 148, 226)); */
+  /* background-clip: text; */
+  /* color: transparent; */
+  /* for switch color background */
+  --value: white;
+  background-color: var(--value);
+  transition: background-color 1s;
+  /* for switch color background */
+}
+#form {
+  /* for switch color background */
+  border-radius: 15px;
+  --value: white;
+  background-color: var(--value);
+  transition: background-color 1s;
+  /* for switch color background */
+}
+.card-form {
+  width: 550px;
+  height: 600px;
+  /* background-color: rgba(255, 255, 255, 0.253); */
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 0px 8px 8px 0 rgb(39, 39, 39);
+}
+
+.card_f_l {
+  display: flex;
+  gap: 15px;
+}
+.container_firstname {
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+}
+
+.l_name {
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+}
+
+.nametext {
+  position: relative;
+  bottom: 5px;
+  font-size: small;
+}
+
+.for_text {
+  border-radius: 5px;
+  border: 1px solid rgb(59, 59, 59);
+  width: 100%;
+  padding: 10px;
+}
+
+.card4 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  position: relative;
+  bottom: 15px;
+}
+.query_lay1 {
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(88, 88, 88);
+  padding: 10px;
+  gap: 10px;
+  /* text-align: center; */
+}
+.for_query {
+  display: flex;
+  gap: 10px;
+}
+
+.rad {
+  margin-left: 15px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: none;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid rgb(88, 88, 88);
+}
+
+/* error message */
+/* #Msg_input {
+  border: 3px solid red;
+} */
+
+.chck_text {
+  margin-left: 10px;
+}
+
+button {
+  height: 50px;
+  border-radius: 8px;
+  /* border: 1px solid rgb(0, 131, 81); */
+  background-color: rgb(38, 196, 224);
+  /* background: linear-gradient(lightgray, lightblue, lightskyblue); */
+  border: none;
+  box-shadow: 0px 8px 8px 0 rgb(39, 39, 39);
+}
+
+button:hover {
+  background-color: whitesmoke;
+  /* border: 1px solid rgb(38, 196, 224); */
+}
+
+.gg {
+  display: flex;
+  gap: 15px;
+}
+
+.container_firstname input:focus {
+  outline: 0;
+}
+.container_firstname.success input {
+  border-color: green;
+  border-radius: 4px;
+}
+.container_firstname.error input {
+  border-color: red;
+  border-radius: 4px;
+}
+
+.container_firstname .error {
+  color: red;
+  font-size: 9px;
+  height: 13px;
+}
+/* .card_chck {
+  display: none;
+}
+
+#Usr_check:checked ~ .card_chck {
+  display: block;
+}
+#Usr_check {
+  display: none;
+} */
+input {
+  background-color: transparent;
+}
+.container {
+  display: none;
+  width: 150px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+}
+#mycheckbox:checked ~ .container {
+  display: block;
+}
+
+@media only screen and (max-width: 769px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(227, 253, 245);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card-form {
+    width: 410px;
+    height: 600px;
+    /* background-color: rgba(255, 255, 255, 0); */
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: column;
+    justify-content: space-evenly;
+    border: 1px solid rgb(209, 209, 209);
+    box-shadow: 0px 8px 8px 0 rgb(39, 39, 39);
+  }
+
+  .card_f_l {
+    display: grid;
+    gap: 10px;
+  }
+  .container_firstname {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    width: 100%;
+  }
+
+  .container_firstname .error {
+    position: relative;
+    left: 160px;
+  }
+
+  .l_name {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    width: 100%;
+  }
+
+  .card_email {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+  }
+  .card_message {
+    display: grid;
+    grid-template-columns: 100px 100px;
+  }
+
+  .nametext {
+    position: relative;
+    bottom: 5px;
+    font-size: small;
+    min-width: 90px;
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .for_text {
+    border-radius: 5px;
+    border: 1px solid rgb(112, 112, 112);
+    width: 220px;
+
+    padding: 10px;
+  }
+
+  .card4 {
+    display: grid;
+    justify-content: space-evenly;
+    gap: 15px;
+    position: relative;
+    bottom: 15px;
+    font-size: small;
+  }
+  .query_lay1 {
+    /* background-color: rgb(255, 255, 255); */
+    background-color: transparent;
+    display: grid;
+    width: 220px;
+    border-radius: 5px;
+    border: 1px solid rgb(114, 114, 114);
+    padding: 8px;
+    gap: 10px;
+    margin-left: 100px;
+  }
+  .for_query {
+    display: flex;
+    gap: 10px;
+  }
+
+  .rad {
+    margin-left: 15px;
+  }
+
+  textarea {
+    width: 220px;
+    min-height: 90px;
+    resize: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  .chck_text {
+    margin-left: 10px;
+  }
+
+  button {
+    height: 50px;
+    border-radius: 8px;
+    /* border: 1px solid rgb(0, 131, 81); */
+    background: linear-gradient(lightgray, lightblue, lightskyblue);
+    box-shadow: 0px 10px 10px 0 black;
+  }
+
+  button:hover {
+    background-color: whitesmoke;
+    border: 1px solid rgb(0, 131, 81);
+  }
+
+  .gg {
+    display: flex;
+    gap: 15px;
+  }
+}
+/* 
+.outp {
+  background-color: aqua;
+  width: 250px;
+  height: 300px;
+} */
+.outp {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.116);
+  /* background-color: transparent; */
+  border: 1px solid rgb(216, 216, 216);
+  width: 410px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  /* background-color: transparent; */
+  box-shadow: 0px 8px 8px 0 rgb(39, 39, 39);
+}
+
+.name_output {
+  display: flex;
+}
+#output1 {
+  margin-left: 10px;
+}
+#output2 {
+  margin-left: 10px;
+}
+#output3 {
+  margin-left: 10px;
+}
+#output4 {
+  margin-left: 10px;
+}
+#output5 {
+  margin-left: 10px;
+}
+#output6 {
+  margin-left: 10px;
+}

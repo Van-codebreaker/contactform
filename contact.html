@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="customer-service.png" />
+    <!-- <link rel="icon" type="imag/jpg" href="/contactform/"> -->
+    <link rel="stylesheet" href="contact.css" />
+    <script defer src="contact.js"></script>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <!-- The action attribute defines where the data gets sent -->
+    <!-- In this example, the data is sent to an absolute URL — -->
+    <!-- <form action="https://example.com">…</form> -->
+    <!-- the data is sent to a different URL -->
+    <!-- <form action="/somewhere_else">…</form> -->
+    <!-- <form id="form" action="" method="get"> -->
+    <!-- action="insert.php" method="POST" -->
+    <form id="form">
+      <div class="card-form">
+        <div class="card1"><h1>Contact Us</h1></div>
+        <div class="card_f_l">
+          <label>
+            <div class="container_firstname">
+              <p class="nametext">First Name</p>
+              <input
+                class="for_text"
+                type="text"
+                id="fn_input"
+                name="firstname"
+              />
+              <p class="error"></p>
+              <!-- required -->
+            </div>
+          </label>
+          <label>
+            <div class="container_firstname">
+              <p class="nametext">Last Name</p>
+              <input
+                class="for_text"
+                type="text"
+                id="ln_input"
+                name="lastname"
+              />
+              <p class="error"></p></div
+          ></label>
+        </div>
+        <div class="card">
+          <label
+            ><div class="card_email">
+              <p class="nametext">Email Address</p>
+              <input
+                class="for_text"
+                type="email"
+                id="eml_input"
+                name="email_acc"
+              />
+              <!-- required -->
+            </div></label
+          >
+        </div>
+        <div class="queryname"><p class="nametext">Query Type</p></div>
+        <div class="card4">
+          <div class="query_lay1">
+            <label class="for_query"
+              ><input
+                class="rad"
+                type="radio"
+                id="GE_rd_input"
+                name="radio"
+                value="General Enquiry"
+              />
+              <p class="type_query">General Enquiry</p></label
+            >
+          </div>
+          <div class="query_lay1">
+            <label class="SR_query"
+              ><input
+                class="rad"
+                type="radio"
+                id="SR_rd_input"
+                name="radio"
+                value="Support requiest"
+              />
+              Support Request</label
+            >
+          </div>
+        </div>
+        <div class="card">
+          <label class="nametext"
+            ><div class="card_message">
+              <p class="nametext">Message</p>
+              <textarea
+                class="usermessage"
+                id="Msg_input"
+                name="textarea_msg"
+              ></textarea>
+            </div>
+          </label>
+        </div>
+        <div class="card">
+          <label class="gg"
+            ><input
+              class="for_comm"
+              type="checkbox"
+              id="Usr_check"
+              name="chck"
+              value="checked"
+            />
+            <p class="long_comm">I consent to being contacted by the team</p>
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+        <!-- <button type="submit">Submit</button> -->
+        <input type="checkbox" id="mycheckbox" />
+        <div class="container">
+          <label for="mycheckbox"><p>my checkbox</p></label>
+        </div>
+      </div>
+    </form>
+
+    <div class="outp">
+      <div class="name_output">
+        <strong>First Name:</strong>
+        <div id="output1"></div>
+      </div>
+      <div class="name_output">
+        <strong>Last Name:</strong>
+        <div id="output2"></div>
+      </div>
+      <div class="name_output">
+        <strong>Email:</strong>
+        <div id="output3"></div>
+      </div>
+      <div class="name_output">
+        <strong>Query Type:</strong>
+        <div id="output4"></div>
+      </div>
+      <div class="name_output">
+        <strong>Message:</strong>
+        <div id="output5"></div>
+      </div>
+      <div class="name_output">
+        <strong>checkbox:</strong>
+        <div id="output6"></div>
+      </div>
+    </div>
+
+    <!-- <script src="contact.js"></script> -->
+  </body>
+</html>
