@@ -17,7 +17,7 @@
     <!-- <form action="/somewhere_else">…</form> -->
     <!-- <form id="form" action="" method="get"> -->
     <!-- action="insert.php" method="POST" -->
-    <form id="form">
+    <form id="form" action="insert.php" method="POST">
       <div class="card-form">
         <div class="card1"><h1>Contact Us</h1></div>
         <div class="card_f_l">
@@ -56,6 +56,7 @@
                 id="eml_input"
                 name="email_acc"
               />
+              <p class="error"></p>
               <!-- required -->
             </div></label
           >
@@ -81,7 +82,7 @@
                 type="radio"
                 id="SR_rd_input"
                 name="radio"
-                value="Support requiest"
+                value="Support request"
               />
               Support Request</label
             >
@@ -96,6 +97,7 @@
                 id="Msg_input"
                 name="textarea_msg"
               ></textarea>
+              <p class="error"></p>
             </div>
           </label>
         </div>
@@ -113,10 +115,10 @@
         </div>
         <button type="submit">Submit</button>
         <!-- <button type="submit">Submit</button> -->
-        <input type="checkbox" id="mycheckbox" />
+        <!-- <input type="checkbox" id="mycheckbox" />
         <div class="container">
           <label for="mycheckbox"><p>my checkbox</p></label>
-        </div>
+        </div> -->
       </div>
     </form>
 

@@ -56,6 +56,8 @@ form.addEventListener("submit", (e) => {
 
 const firstname = document.getElementById("fn_input");
 const lastname = document.getElementById("ln_input");
+const email = document.getElementById("eml_input");
+const message = document.getElementById("Msg_input");
 
 const setError = (element, message) => {
   const inputControl = element.parentElement;
@@ -78,6 +80,8 @@ const setSuccess = (element) => {
 const validinput = () => {
   const fnvalue = firstname.value.trim();
   const lnvalue = lastname.value.trim();
+  const eml = email.value.trim();
+  const msg = message.value.trim();
 
   if (fnvalue === "") {
     setError(firstname, "First name is Required");
@@ -90,6 +94,17 @@ const validinput = () => {
   } else {
     setSuccess(lastname);
   }
+
+  if (eml === "") {
+    setError(email, "Email is Required");
+  } else {
+    setSuccess(email);
+  }
+  if (msg === "") {
+    setError(message, "Message is Required");
+  } else {
+    setSuccess(message);
+  }
 };
 /* for switch color background */
 let body = document.querySelector("body");
@@ -97,6 +112,6 @@ let isToggled = false;
 
 body.onclick = () => {
   isToggled = !isToggled;
-  body.style.setProperty("--value", isToggled ? "gray" : "white");
+  body.style.setProperty("--value", isToggled ? "gray" : "lightblue");
 };
 /* for switch color background */
